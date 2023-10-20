@@ -1,0 +1,151 @@
+*
+{
+    padding:0;
+    margin:0;
+outline:none;
+}
+body{
+    height: 100vh;
+    background: #0093E9 linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Gemunu Libre', 'Cairo', sans-serif;
+}
+ p {
+    color: #323232;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin:2px;
+  
+}
+span{
+    color: #323232;
+    opacity: 0.8;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+.app-container
+{
+    max-width: 500px;
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+margin:10px auto 0;
+
+ padding:12px; 
+background:#FBFBFB; 
+
+
+}
+
+.task {
+    background-color: #FFF;
+    box-shadow: 0px 0px 2px 2px #32323212;
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.show-tasks
+{
+    width:100%;
+    margin:12px 0px;
+ display:flex;
+ flex-direction: column;
+ gap:12px;
+
+}
+
+.checkbox
+{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0093E9;
+    cursor: pointer;
+}
+.completed 
+{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: #0093E9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.inputs
+{
+
+  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   border:2px solid #0093E9;
+   padding:6px;
+  
+}
+
+
+input
+{  font-size: 16px;
+    flex-grow: 1;
+    background-color: #FBFBFB;
+    letter-spacing: 1px;
+    width:100%;
+    font-family: 'Gemunu Libre', 'Cairo', sans-serif;
+    border: none;
+}
+button.add
+{
+    border:none;
+    padding:9px 16px;
+    background: #0093E9;
+    color: #FBFBFB;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.filter
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:5px;
+}
+.filter-group
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:7px;
+}
+.filter-group button
+{
+border:none;
+font-size: 16px;
+    background-color: #0000;
+    color: #323232;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+ .filter-group button{
+    color:#0093E9;
+    font-family: 'Gemunu Libre', 'Cairo', sans-serif;
+}
+@media(max-width: 560px)
+{
+.app-container
+{
+    width:80%;
+}
+button.add
+{
+    padding:9px 10px;
+}
+}
